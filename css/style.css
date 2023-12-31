@@ -2,6 +2,8 @@ body{
     margin: 0px;
 }
 
+/* Start of the Header part */
+
 .header{
     height: auto;
     background-image: radial-gradient(#0C75C0, #032F4E);
@@ -29,7 +31,7 @@ body{
     position: fixed;
     left: 5%;
     /* top: 22px; */
-    z-index: 99999;
+    z-index: 500;
     transition: all .5s ease-in-out;
 }
 
@@ -110,7 +112,7 @@ body{
     border-radius: 35px;
 }
 
-.header_phone .nav .logo img{
+/* .header_phone .nav .logo img{
     width: 30% !important;
 }
 
@@ -120,7 +122,45 @@ body{
 
 .header_phone .links{
     background-color: #032F4E;
+} */
+
+.header .nav .bars i{
+    font-size: 35px;
+    color: #eee;
+    cursor: pointer;
 }
+
+.header .second_nav{
+    display: none;
+}
+
+
+.header .second_nav_links{
+    width: 75%;
+    position: fixed;
+    left: 7%;
+    z-index: 600;
+    margin: auto;
+    background-color: #ccc;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px 40px 30px 40px;
+    background-image: linear-gradient(-45deg,#0C75C0, #032F4E) !important;
+    box-shadow: 0.5px 0.5px 10px 0.5px #bebebe;
+    display: none;
+    text-align: center;
+}
+
+.header .second_nav_links a{
+    display: block;
+    font-size: 25px;
+    border-bottom: 2px solid #bebebe;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    color: #ebe0e0;
+    text-decoration: none;
+}
+
 
 @media(max-width:850px){
     .header{
@@ -129,9 +169,16 @@ body{
         border-bottom-right-radius: 60px;
     }
     .header .nav .logo img{
-        width: 45%;
+        width: 40%;
         border-radius: 50%;
     }
+    .header .nav{
+        display: none;
+    }
+    .header .second_nav{
+        display: flex;
+    }
+    
 
     .header .content{
         display: block;
@@ -143,25 +190,53 @@ body{
     
 }
 
+
+@media(max-width:520px){
+    .header .second_nav_links{
+       left: 4%;
+    } 
+}
+
+@media(max-width:375px){
+    .header .second_nav_links{
+       left: 1.5%;
+    } 
+}
+
+@media(min-width:850px){
+    .header .second_nav_links{
+       display: none;
+    } 
+}
+
+/* --------------------- End Of Header Part -------------------------- */
+
+
+
+/* --------------------- Start Of Home Section1 Part -------------------------- */
+
 .home_section1{
     padding-bottom: 140px;
 }
 
-.home_section1 .top{
+.home_section1 .con .top{
     margin-top: 60px;
     text-align: center;
 }
 
-.home_section1 .top h2{
+.home_section1 .con .top h2{
     font-family: 'Comfortaa', Arial !important;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 8px;
+    color: #424866;
+    letter-spacing: 4px;
 }
 
-.home_section1 .top img{
+.home_section1 .con .top img{
     display: inline-block;
     margin-top: 0px;
+    margin-left: -6px;
 }
 
 .home_section1 .content{
@@ -171,68 +246,111 @@ body{
     height: 500px;
 }
 
+.home_section1 .content .right{
+    width: 100%;
+    margin-top: 70px;
+}
+
+
 .home_section1 .content .left{
     width: 100%;
     margin-left: 30px;
-    border-radius: 40px;
-    margin-top: 60px;
+    border-radius: 20px;
+    margin-top: 20px;
     background-image: url(../images/02.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
+.home_section1 .content .left .over_left{
+    width: 28%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    padding:40px 20px;
+    text-align: left;
+    border-radius: 20px 20px 0px 0px;
+    background-image: linear-gradient(45deg,#0C75C0, #032F4E) !important;
+    color: #ebe0e0;
+    letter-spacing: 12px;
+    font-weight: bold;
+    font-family: 'Comfortaa', Arial !important;
+    line-height: 45px;
+    
+}
+
+.home_section1 .content .right .top , .home_section1 .content .right .bottom{
+    height: 50%;
+    display: flex;
+}
+
 .home_section1 .content .right .top .left{
     width: 100%;
     margin: -40px 0px 25px 20px;
-    border-radius: 40px;
+    border-radius: 20px;
     background-image: url(../images/02.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
 }
 
 .home_section1 .content .right .top .right{
     width: 100%;
     margin: -40px 30px 25px;
-    border-radius: 40px;
+    border-radius: 20px;
     background-image: url(../images/02.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 
 .home_section1 .content .right .bottom .left{
     width: 100%;
     margin: 0px 0px 0px 20px;
-    border-radius: 40px;
+    border-radius: 20px;
     background-image: url(../images/02.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 .home_section1 .content .right .bottom .right{
     width: 100%;
     margin: 0px 30px;
-    border-radius: 40px;
+    border-radius: 20px;
     background-image: url(../images/02.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.home_section1 .content .left .over{
-    width: 25%;
-    padding: 40px 20px;
-    border-radius: 40px 40px 0px 0px;
-    background-color: #3f00b5;
-}
-.home_section1 .content .right,.home_section1 .content .left{
-    width: 100%;
-}
-
-.home_section1 .content .right .top , .home_section1 .content .right .bottom{
-    height: 50%;
-}
-
-.home_section1 .content .right .top ,.home_section1 .content .right .bottom{
+    cursor: pointer;
     display: flex;
+    align-items: end;
+    justify-content: center;
 }
+
+.home_section1 .content .right .top .left .over , .home_section1 .content .right .top .right .over , .home_section1 .content .right .bottom .left .over , .home_section1 .content .right .bottom .right .over{
+    background-image: linear-gradient(45deg,#0C75C0, #032F4E) !important;
+    width: 100%;
+    text-align: center;
+    color: #ebe0e0;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Comfortaa', Arial !important;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+/* --------------------- End Of Home Section1 Part -------------------------- */
