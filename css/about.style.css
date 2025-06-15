@@ -1,0 +1,193 @@
+.header{
+    height: 35vh;
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    padding-top: 200px !important;
+    padding-bottom: 30px !important;
+    overflow: hidden;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+}
+.header .content{
+    font-family: 'Comfortaa', Arial !important;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    z-index: 0;
+    transform: translateY(50px);
+}
+
+.header .content .left{
+    text-align: center;
+}
+
+.header .content .left p{
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    max-width: 500px;
+    margin: auto;
+}
+.h2-sesion1{
+text-align: center;
+font-family: 'comfortaa';
+}
+.about_sesion2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.p-sesion2-div2{
+  font-size: 20px;  
+  font-family: 'comfortaa';
+  text-align: center;
+  line-height: 40px;
+  width: 90%;
+  margin:40px;
+}
+
+.h2-sesion1{
+    margin-top: 70px;
+}
+.about-img{
+    width: 25%;
+    height: 250%;
+}
+.img-sesion2{
+    border-radius: 25px;
+    border: #fff 2px solid;
+    
+}
+
+.about_sesion2 .right{
+    width: 50%;
+}
+
+.about_sesion2 img {
+    width: 120%;
+}
+body{
+    margin: 0px;
+}
+/* about */
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+.overlay{
+    display: none;
+}
+.p_about{
+    font-size: 20px;  
+  font-family: 'comfortaa';
+  text-align: center;
+  line-height: 40px;
+  width: 50%;
+  margin:50px; 
+}
+
+.about_img{
+    border-radius: 35px;
+    border: #fff 2px solid;
+    width: 30%;
+    overflow: hidden;
+
+}
+.img_about{
+    width: 100%;
+    height: 100%;
+}
+.about-us{
+    text-align: center;
+   font-family: 'comfortaa';
+   margin-top: 70px;
+}
+@media(max-width:850px){
+    .about{
+        text-align: center;
+        background-image: url("../img/R.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .overlay{
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.6);
+    }
+    .about_sesion2{
+        text-align: center;
+        background-image: url("../img/OIP.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        }
+        .about_sesion2 .right{
+            width: 80%;
+        }
+    .p-sesion2-div2{
+        text-align: center;
+        z-index: 4;
+        position: relative;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .p_about{
+        text-align: center;
+        z-index: 2;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .about_img{
+        display: none;
+    }
+    .about-img{
+        display: none; 
+    }
+    
+}
+
+@media(max-width:850px){
+    .header{
+        padding-top: 100px !important;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+
+
+    .header .content{
+        display: block;
+    }
+    .header .content .left h1{
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .header .content .left p{
+        font-size: 18px;
+    }
+    
+}

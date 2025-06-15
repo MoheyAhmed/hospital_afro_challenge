@@ -1,0 +1,123 @@
+footer {
+    background-image: radial-gradient(#0C75C0, #032F4E);
+    color: white;
+    font-family: 'Comfortaa', Arial !important;
+    overflow: hidden;
+}
+
+footer nav {
+
+    padding: 25px 50px;
+}
+
+footer nav .opp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer nav .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+footer nav .logo div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+footer nav .logo img {
+    width: 64px;
+}
+
+footer nav .logo p {
+    width: 350px;
+}
+
+footer nav .opp .link-title .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav .opp .link-title .links a {
+    display: block;
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+footer nav .opp .link-title .links a:hover {
+    color: #c4b9b9;
+}
+
+footer nav .opp .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+footer nav .opp .numbers .number {
+    width: 100%;
+}
+
+footer nav .socila .media i.fab {
+    font-size: 30px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+footer nav .socila-media .media .fab.fa-facebook:hover {
+    color: #0d2d72;
+}
+
+footer nav .socila-media .media .fab.fa-twitter:hover,
+footer nav .socila-media .media .fab.fa-linkedin-in:hover {
+    color: #0fb2df;
+}
+
+footer nav .socila-media .media .fab.fa-instagram:hover {
+    color: #b10f0f;
+}
+
+footer nav .socila-media .media .fab.fa-youtube:hover {
+    color: #b10f0f;
+}
+
+footer .copyrite {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #ffffff;
+    background-image: radial-gradient(#025088, #021320);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+@media(max-width: 850px) {
+   
+
+    footer nav .opp {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer nav .logo {
+        align-items: center;
+    }
+
+    footer nav .opp .link-title .links {
+        display: block;
+    }
+    footer .contact{
+        margin: 0;
+    }
+}

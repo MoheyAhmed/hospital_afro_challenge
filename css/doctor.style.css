@@ -1,0 +1,225 @@
+.header{
+    height: 35vh;
+    background-image: url("../img/doctor.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    padding-top: 200px !important;
+    padding-bottom: 30px !important;
+    overflow: hidden;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+}
+.header .content{
+    font-family: 'Comfortaa', Arial !important;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    z-index: 0;
+    transform: translateY(50px);
+}
+
+.header .content .left{
+    text-align: center;
+}
+
+.header .content .left p{
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    max-width: 500px;
+    margin: auto;
+}
+.doctors .h2_doctors{
+    text-align: center;
+    font-family: 'comfortaa' sans-serif;
+    font-size: 40px;
+    margin: 20px;
+}
+.div1 {
+    margin: 50px 0;
+    text-align: center;
+}
+.div1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #032F4E;
+    overflow: hidden;
+
+}
+.overlay2{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.img1{
+    width: 100%;
+}
+.img_for_doctors{
+    justify-content: space-between;
+    display: flex;
+}
+
+body{
+    margin: 0px;
+}
+.b_doctor{
+    border-radius: 10px;
+    width: auto;
+   padding: 10px;
+    background-color:#032F4E;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.b_doctor:hover{
+  background-color: white ;
+  color: #032F4E;
+
+}
+.chat{
+    width: 400px;
+    height: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    transition: 0.5s;
+}
+.chat.open{
+    height: 550px;
+}
+.chat .header2{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#0C75C0, #032F4E);
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.header2 img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+.header2 h3{
+    margin-left: 80px;
+
+}
+.header2 i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.chat .message-area{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.chat .message-area .message-right{
+    padding: 10px;
+    background-color: #c7e6fc;
+    text-align: left;
+    margin-right: 20px;
+    width: fit-content;
+    border-radius: 10px 0 10px 10px;
+    align-self: flex-end;
+}
+.chat .message-area .message-left{
+    padding: 10px;
+    background-color: #eef3f6;
+    /* border: 1px solid #cfcfd0; */
+    text-align: left;
+    margin-left: 20px;
+    width: fit-content;
+    border-radius: 0 10px 10px 10px;
+    align-self: flex-start;
+}
+.chat .chat-foot{
+    width: 100%;
+    height: 2%;
+
+}
+.chat-foot form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.chat-foot form textarea{
+    width: 120%;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.chat-foot i{
+    position: absolute;
+    top: calc(50% - 8);
+    right: 20px;
+    cursor: pointer;
+}
+
+@media(max-width:850px){
+    .img_for_doctors{
+        display: block;
+        font-size: 10px;
+    }
+    
+    
+}
+
+@media(max-width:850px){
+    .header{
+        padding-top: 100px !important;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+
+
+    .header .content{
+        display: block;
+        transform: translateY(90px);
+    }
+    .header .content .left p{
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+}
+
+

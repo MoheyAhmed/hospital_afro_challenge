@@ -1,0 +1,172 @@
+
+
+body{
+    margin: 0px;
+    font-family: 'Comfortaa', Arial !important;
+}
+
+/* Start of the Header part */
+ol{
+    list-style: none;
+}
+.header{
+    height: 35vh;
+    background-image: url("../img/first-aid-main.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    position: relative;
+    top: 0;
+    padding-top: 200px !important;
+    padding-bottom: 30px !important;
+    overflow: hidden;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+}
+.header .content{
+    font-family: 'Comfortaa', Arial !important;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    z-index: 0;
+    transform: translateY(50px);
+}
+
+.header .content .left{
+    text-align: center;
+}
+
+.header .content .left p{
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    max-width: 500px;
+    margin: auto;
+}
+@media(max-width:850px){
+    .header{
+        padding-top: 100px !important;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+
+
+    .header .content{
+        display: block;
+        transform: translateY(90px);
+    }
+    .header .content .left p{
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+}
+
+
+/* --------------------- End Of Header Part -------------------------- */
+.health p{
+    max-width: 550px;
+}
+
+.headache{
+    display: flex;
+    margin-bottom: 70px;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.headache p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.diabetes{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.diabetes p{
+    font-size: 20px
+    ;line-height: 1.8;
+}
+.narrow_breath{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.narrow_breath p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+.earache{
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+.img{
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.earache p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+.health {
+    margin-top: 70px;
+}
+@media(max-width:850px){
+    .health>div{
+        flex-direction: column;
+    }
+    .health .diabetes, .health .earache{
+        flex-direction: column-reverse;
+    }
+    .health p{
+        text-align: center;
+        font-size: 16px;
+    }
+}
+@media(max-width: 850px){
+    footer nav .opp{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer nav .logo{
+        align-items: center;
+    }
+    footer nav .opp .link-title .links{
+        display: block;
+    }
+}
