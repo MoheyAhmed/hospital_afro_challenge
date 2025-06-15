@@ -1,117 +1,324 @@
 <!DOCTYPE html>
 <html id="html" dir="ltr" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Health Care</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Comfortaa:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Comfortaa:wght@600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
 </head>
+
 <body>
     <!-- Start of Header & NavBar Section -->
-  
+
     <div class="header">
         <div class="nav">
             <div class="logo">
-                <img src="images/WhatsApp Image 2023-12-17 at 15.06.01_c4fdcc76.jpg" alt="">
+                <img src="img/WhatsApp_Image_2024-02-07_at_11.57.30_325224f0-removebg-preview.png">
+                <h5>Health Care</h5>
             </div>
+            <i id="bar_icon" class="fas fa-bars"></i>
             <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
+                <a href="index.html">Home</a>
+                <a href="pages/about.html">About</a>
                 <!-- <a href="">More</a> -->
-                <a href="">Services</a>
-                <a href="">First Aid Guidelines</a>
-                <a href="">Contact Us</a>
-            </div>
-        </div>
-        <div class="nav second_nav">
-            <div class="logo">
-                <img src="images/WhatsApp Image 2023-12-17 at 15.06.01_c4fdcc76.jpg" alt="">
-            </div>
-            <div class="bars">
-                <i id="bar_icon" class="fas fa-bars"></i>
+                <div class="serv-link">
+                    <a href="#services">Services</a>
+                    <i class="fas fa-sort-down"></i>
+
+                    <ul class="drop-down">
+                        <li><a href="pages/first-aid.html">First Aid</a></li>
+                        <li><a href="pages/medical-tools.html">Medical Tools</a></li>
+                        <li><a href="pages/doctor.html">Doctor</a></li>
+                        <li><a href="pages/pharmacy.html">Pharmacy</a></li>
+                        <li><a href="pages/blood.html">Blood</a></li>
+                        <li><a href="pages/hospital.html">Hospital</a></li>
+                    </ul>
+                </div>
+                <a href="pages/contact.html">Contact Us</a>
             </div>
         </div>
 
-        <div id="second_nav_links" class="second_nav_links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <!-- <a href="">More</a> -->
-            <a href="">Services</a>
-            <a href="">First Aid Guidelines</a>
-            <a href="">Contact Us</a>
-        </div>
-        
         <div class="content">
             <div class="left">
                 <h1>Welcome in Our Site</h1>
                 <p>LET US SERVE YOU BETTER </p>
-                <button>Let's Start</button>
+                <button id="b-header">Let's Start</button>
             </div>
             <div class="right">
-                <img src="images/header.jpg" alt="">
+                <img src="img/header.jpg" alt="">
             </div>
         </div>
-    </div> 
-
+    </div>
     <!-- End of Header & NavBar Section -->
 
+    <div class="first">
+        <h1>SERVISES</h1>
 
-    <!-- Start of first section in home page Section -->
-
-    <!-- <div class="home_section1">
-        
-        <div class="con">
-            <div class="top">
-                <h2>LET US SERVE YOU BETTER</h2>
-                <img src="images/line.png" alt="">
-                <img src="images/line.png" alt="">
+        <img src="img/line.png" alt="">
+    </div>
+    <div class="services">
+        <div class="services1">
+            <div class="image"><img src="img/Anesthesiology.jpg"></div>
+            <div class="services-content">
+                <h2>DOCTORS</h2>
+                <P>Doctors work hard to save the lives of patients with serious aliments they act as an inspiration tos
+                    society.</P>
+                <a href="pages/doctor.html">learn more</a>
             </div>
         </div>
-
-        <div class="content">
-            <div class="left">
-                <div class="over_left">
-                    <h2>Our <br> Srevices</h2>
+        <div class="services2">
+            <div class="image"><img src="img/0_QhgNDmcAMFIRvPQ5.jpg"></div>
+            <div class="services-content">
+                <h2>PHARMESES</h2>
+                <P>The Pharmacies provides health services such as providing medications and proviving patients with
+                    health monitoringand advice.</P>
+                <a href="pages/pharmacy.html">learn more</a>
+            </div>
+        </div>
+        <div class="services3">
+            <div class="image"><img src="img/Intensive-care-units.jpg"></div>
+            <div class="services-content">
+                <h2>HOSPITALES</h2>
+                <P>A Hospitals is a therapeutic institution that provides health care to patients through a specialized
+                    staff and medical equipment.</P>
+                <a href="pages/hospital.html">learn more</a>
+            </div>
+        </div>
+        <div class="services4">
+            <div class="image"><img src="img/r0_0_800_600_w800_h600_fmax.jpg"></div>
+            <div class="services-content">
+                <h2>BLOOD</h2>
+                <P> Blood transfusion is performed in emergency situations to save people's lives when blood loss occurs
+                    by replacing blood cells lost during
+                    severe bleeding.
+                </P>
+                <a href="pages/blood.html">learn more</a>
+            </div>
+        </div>
+        <div class="services5">
+            <div class="image"><img src="img/What-Are-10-Items-In-A-First-Aid-Kit.webp" width="530px" height="227px">
+            </div>
+            <div class="services-content">
+                <h2>FIRST AID</h2>
+                <P>First aid is immediate and temporary medical care provided to the injured person for the purpose of
+                    trying to bring him to the best health condition
+                    until full medical assistance arrives.
+                </P>
+                <a href="pages/first-aid.html">learn more</a>
+            </div>
+        </div>
+        <div class="services6">
+            <div class="image"><img
+                    src="img/الأجهزة-والمعدات-الطبية-المستلزمات-الطبية-موقع-التجارة-ويب-www.alttejarat.com-.jpg"></div>
+            <div class="services-content">
+                <h2> MEDICAL TOOLS</h2>
+                <P> Medical tools are a vital part of healthcare, playing a crucial role in improving the quality of
+                    care and enhancing the effectiveness
+                    of treatment./</P>
+                <a href="pages/medical-tools.html">learn more</a>
+            </div>
+        </div>
+    </div>
+    <section class="testmonials">
+        <h2>Testmonials</h2>
+        <img src="img/line.png" alt="">
+        <div class="clients">
+            <div class="client">
+                <div class="left">
+                    <img src="img/test.webp" alt="">
+                    <h4>Client Name</h4>
+                </div>
+                <div class="right">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore quae dolore ea iure
+                        debitis modi</p>
+                    <div class="rev">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </div>
             </div>
-            <div class="right">
-                <div class="top">
-                    <div class="left">
-                        <div class="over">
-                            <h2>Hospitals</h2>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="over">
-                            <h2>Pharmacies</h2>
-                        </div>
+            <div class="client">
+                <div class="left">
+                    <img src="img/test.webp" alt="">
+                    <h4>Client Name</h4>
+                </div>
+                <div class="right">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore quae dolore ea iure
+                        debitis modi</p>
+                    <div class="rev">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
-                <div class="bottom">
-                    <div class="left">
-                        <div class="over">
-                            <h2>Doctors</h2>
-                        </div>
+            </div>
+            <div class="client">
+                <div class="left">
+                    <img src="img/test.webp" alt="">
+                    <h4>Client Name</h4>
+                </div>
+                <div class="right">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore quae dolore ea iure
+                        debitis modi</p>
+                    <div class="rev">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="right">
-                        <div class="over">
-                            <h2>Awarence</h2>
-                        </div>
+                </div>
+            </div>
+            <div class="client">
+                <div class="left">
+                    <img src="img/test.webp" alt="">
+                    <h4>Client Name</h4>
+                </div>
+                <div class="right">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore quae dolore ea iure
+                        debitis modi</p>
+                    <div class="rev">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="client">
+                <div class="left">
+                    <img src="img/test.webp" alt="">
+                    <h4>Client Name</h4>
+                </div>
+                <div class="right">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore quae dolore ea iure
+                        debitis modi</p>
+                    <div class="rev">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="client">
+                <div class="left">
+                    <img src="img/test.webp" alt="">
+                    <h4>Client Name</h4>
+                </div>
+                <div class="right">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore quae dolore ea iure
+                        debitis modi</p>
+                    <div class="rev">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star"></i>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="opp">
+                <div class="logo">
+                    <div>
+                        <img src="img/WhatsApp_Image_2024-02-07_at_11.57.30_325224f0-removebg-preview.png" alt="" />
+                        <h2>Healthy Care</h2>
+                    </div>
+                    <p>When every second matters, intelligent care orchestration across networks of care helps you save
+                        lives</p>
+                </div>
+                <div class="link-title">
+                    <h3>Quick Links</h3>
+                    <div class="links">
+                        <div class="link">
+                            <a href="index.html">Home</a>
+                            <a href="pages/about.html">About</a><a href="">Services</a>
+                            <a href="pages/first-aid.html">First Aid</a>
+                            <a href="pages/contact.html">Contact Us</a>
+                        </div>
+                        <div class="link2">
+                            <a href="pages/doctor.html">Doctors</a>
+                            <a href="pages/hospital.html">Hospitals</a>
+                            <a href="pages/pharmacy.html">Pharmacy</a>
+                            <a href="pages/medical-tools.html">Medical Tools</a>
+                            <a href="pages/blood.html">Blood</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="numbers">
+                        <h3>Contact Us</h3>
+                        <div class="number">
+                            <p>+123456789</p>
+                            <p>+987654321</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <h3>Follow Us</h3>
+                        <div class="media">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="copyrite">
+            <p>Copyright © 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        let menuIcon = document.getElementById("bar_icon");
+        let serv_link = document.getElementsByClassName("serv-link");
+        let navMenu = document.querySelector(".header .nav .links");
+        let drop_down = document.getElementsByClassName("drop-down");
+        window.addEventListener("load", function () {
+            navMenu.classList.remove("open");
+        });
+        menuIcon.addEventListener("click", function () {
+            navMenu.classList.toggle("open");
 
-    </div> -->
-
-    <!-- End of first section in home page Section -->
-
-
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/main.js"></script>
+        });
+        serv_link[0].addEventListener("click", function () {
+            drop_down[0].style.height = "220px";
+            drop_down[0].style.padding = "20px";
+        })
+        let b_header = document.getElementById("b-header")
+        let ser_section = document.getElementsByClassName("first")
+        b_header.addEventListener("click", function () {
+            window.scroll({
+                top: ser_section[0].getBoundingClientRect().y,
+                behavior: "smooth",
+            })
+        })
+    </script>
 </body>
+
 </html>
